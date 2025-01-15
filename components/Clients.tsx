@@ -25,7 +25,10 @@ const Clients = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center max-lg:mt-10">
-          <h2 className="heading mt-20">I've Worked With</h2>
+          <h2 className="heading mt-20">
+            I've Worked
+            <span className="text-purple"> With</span>
+          </h2>
           <div className="h-[40vh] md:h-[20rem] w-full">
             {/* Companies Section */}
             <InfiniteMovingCards
