@@ -1,0 +1,59 @@
+@import "../../variable.scss";
+
+.footer {
+    border-top: 1px solid rgba($color: #ffffff, $alpha: 0.05);
+    padding-block: 60px;
+
+    .footer__container {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+    
+    .footer__socials {
+        display: flex;
+        column-gap: 20px;
+
+        .footer__social-link {
+            color: var(--title-color);
+            font-size: var(--h5-font-size);
+            transition: all 0.7s var(--transition);
+
+            &.link1:hover {
+                color: var(--secondary-color) !important;
+            }
+
+            &.link2:hover {
+                color: #25D366 !important;
+            }
+
+            &.link3:hover {
+                color: #0077b5 !important;
+            }
+
+            &.link4:hover {
+                color: #6e5494 !important;
+            }
+
+            &.link5:hover {
+                color: #000000 !important;
+            }
+
+        }
+    }
+    .footer__copyright{
+        &:nth-child(2){
+            justify-self: center;
+        }
+        &:nth-child(3){
+            justify-self: flex-end;
+        }
+        font-size: var(--tiny-font-size);
+        font-weight: 700;
+        &.footer__max-content{
+            width: max-content;
+        }
+    }
+    .footer__container span {
+        color: var(--primary-color);
+    }
+}
