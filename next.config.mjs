@@ -2,52 +2,29 @@ import { withSentryConfig } from "@sentry/nextjs";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Add the basePath and assetPrefix for GitHub Pages
-  basePath: "/Portfolio", // Replace 'Portfolio' with your GitHub repo name
+  // Base path and asset prefix for GitHub Pages
+  basePath: "/Portfolio",
   assetPrefix: "/Portfolio/",
 
-  // Other Next.js configurations
+  // Other configurations
   reactStrictMode: true,
   swcMinify: true,
 };
 
-export default withSentryConfig(
-  nextConfig,
-  {
-    // For all available options, see:
-    // https://github.com/getsentry/sentry-webpack-plugin#options
+// Disable Sentry if no auth token is set
+const sentryDisabled = !process.env.SENTRY_AUTH_TOKEN;
 
-    // Suppresses source map uploading logs during build
-    silent: true,
-    org: "javascript-mastery",
-    project: "javascript-nextjs",
-  },
-  {
-    // For all available options, see:
-    // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
-
-    // Upload a larger set of source maps for prettier stack traces (increases build time)
-    widenClientFileUpload: true,
-
-    // Transpiles SDK to be compatible with IE11 (increases bundle size)
-    transpileClientSDK: true,
-
-    // Uncomment to route browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers.
-    // This can increase your server load as well as your hosting bill.
-    // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-
-    // side errors will fail.
-    // tunnelRoute: "/monitoring",
-
-    // Hides source maps from generated client bundles
-    hideSourceMaps: true,
-
-    // Automatically tree-shake Sentry logger statements to reduce bundle size
-    disableLogger: true,
-
-    // Enables automatic instrumentation of Vercel Cron Monitors.
-    // See the following for more information:
-    // https://docs.sentry.io/product/crons/
-    // https://vercel.com/docs/cron-jobs
-    automaticVercelMonitors: true,
-  }
-);
+export default sentryDisabled
+  ? nextConfig
+  : withSentryConfig(
+      nextConfig,
+      {
+        silent: true, // Suppress source map upload logs
+      },
+      {
+        widenClientFileUpload: true,
+        transpileClientSDK: true,
+        hideSourceMaps: true,
+        disableLogger: true,
+      }
+    );
