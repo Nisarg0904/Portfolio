@@ -171,11 +171,13 @@ export const BentoGridItem = ({
                 icon={<IoDownloadOutline />}
                 position="left"
                 handleClick={() => {
-                  const resumeUrl = "/Nisarg_resume(base).pdf";
-                  const link = document.createElement("a");
-                  link.href = resumeUrl;
-                  link.download = "Nisarg_resume.pdf";
-                  link.click();
+                  if (typeof document !== "undefined") {
+                    const resumeUrl = "/Nisarg_resume(base).pdf";
+                    const link = document.createElement("a");
+                    link.href = resumeUrl;
+                    link.download = "Nisarg_resume.pdf";
+                    link.click();
+                  }
                 }}
                 otherClasses="!bg-[#161A31]"
               />

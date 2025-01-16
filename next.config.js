@@ -1,16 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/Portfolio", // Matches your GitHub repo name
-  assetPrefix: "/Portfolio/",
+  basePath: "/Portfolio", // Remove this if not required for your deployment
+  assetPrefix: "/Portfolio/", // Remove this if not required
   reactStrictMode: true,
   swcMinify: true,
 
   eslint: {
     ignoreDuringBuilds: true,
   },
-
-  // Enable static export
-  output: "export",
 };
 
 module.exports = nextConfig;
