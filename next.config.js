@@ -1,13 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/Portfolio", // Remove this if not required for your deployment
-  assetPrefix: "/Portfolio/", // Remove this if not required
+  basePath: "/Portfolio", // Set this to your repository name
+  assetPrefix: "/Portfolio/", // Set this to your repository name
   reactStrictMode: true,
   swcMinify: true,
 
   eslint: {
     ignoreDuringBuilds: true,
   },
+
+  // Ensure static export is enabled
+  output: "export",
 };
 
 module.exports = nextConfig;

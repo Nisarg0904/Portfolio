@@ -166,7 +166,21 @@ export const BentoGridItem = ({
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
-
+              <MagicButton
+                title={copied ? "Email is Copied!" : "Download"}
+                icon={<IoDownloadOutline />}
+                position="left"
+                handleClick={() => {
+                  if (typeof document !== "undefined") {
+                    const resumeUrl = "/Nisarg_resume(base).pdf";
+                    const link = document.createElement("a");
+                    link.href = resumeUrl;
+                    link.download = "Nisarg_resume.pdf";
+                    link.click();
+                  }
+                }}
+                otherClasses="!bg-[#161A31]"
+              />
             </div>
           )}
         </div>
