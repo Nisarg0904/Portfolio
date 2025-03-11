@@ -11,7 +11,9 @@ const Grid = () => {
             key={i}
             title={item.title}
             description={item.description}
-            className={item.className}
+            className={`${item.className ?? ""} ${
+              item.id === 2 ? "md:row-span-2" : ""
+            }`}
             img={item.img}
             imgClassName={item.imgClassName}
             titleClassName={item.titleClassName}

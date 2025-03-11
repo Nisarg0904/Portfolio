@@ -51,11 +51,11 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Driven by curiosity, fueled by challenges, and dedicated to creating meaningful applications."
+            words="Driven by curiosity, fueled by challenges, and dedicated to innovation in creating meaningful applications."
             className="text-center text-[40px] md:text-5xl lg:text-5xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-4xl">
             Hi! I&apos;m Nisarg, a Full-Stack Developer based in Toronto.
           </p>
 

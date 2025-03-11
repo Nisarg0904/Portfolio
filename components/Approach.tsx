@@ -8,69 +8,104 @@ const Approach = () => {
     <section id="skills">
       <section className="w-full py-20">
         <h1 className="heading">
-          Technical <span className="text-purple">Skiils</span>
+          Technical <span className="text-purple">Skills</span>
         </h1>
-        {/* remove bg-white dark:bg-black */}
-        <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
-          {/* add des prop */}
-          <Card
-            title="Backend Skills"
-            icon={<AceternityIcon order="Backend" />}
-            skills={[
-              "Java",
-              "Spring Boot",
-              "Node.js",
-              "C#",
-              "PostgreSQL",
-              "Docker",
-              "REST APIs",
-            ]}
-          >
-            <CanvasRevealEffect
-              animationSpeed={3}
-              containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
-              dotSize={2}
-            />
-          </Card>
-          <Card
-            title="Frontend Skills"
-            icon={<AceternityIcon order="Frontend" />}
-            skills={[
-              "React",
-              "React Native",
-              "JavaScript",
-              "Android/iOS Development",
-              "Git/GitHub",
-            ]}
-          >
-            <CanvasRevealEffect
-              animationSpeed={3}
-              containerClassName="bg-pink-900 rounded-3xl overflow-hidden"
-              colors={[
-                [255, 166, 158],
-                [221, 255, 247],
+        <div className="my-20 flex flex-col lg:flex-row items-stretch justify-center w-full gap-7">
+          <div className="flex-1 basis-0 min-w-0">
+            <Card
+              title="Backend & Framework"
+              icon={<AceternityIcon order="Backend" />}
+              skills={[
+                "Java",
+                "Spring Boot",
+                "Node.js",
+                "C#",
+                "ASP .NET",
+                "PostgreSQL",
+                "Docker",
+                "REST APIs",
+                "GraphQL",
               ]}
-              dotSize={2}
-            />
-          </Card>
-          <Card
-            title="Other Skills"
-            icon={<AceternityIcon order="Others" />}
-            skills={[
-              "Machine Learning",
-              "Docker",
-              "Scrum",
-              "Team Collaboration",
-              "Problem-Solving",
-              "Multitasking",
-            ]}
-          >
-            <CanvasRevealEffect
-              animationSpeed={3}
-              containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
-              colors={[[125, 211, 252]]}
-            />
-          </Card>
+            >
+              <CanvasRevealEffect
+                animationSpeed={3}
+                containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
+                dotSize={2}
+              />
+            </Card>
+          </div>
+          <div className="flex-1 basis-0 min-w-0">
+            <Card
+              title="Frontend Skills"
+              icon={<AceternityIcon order="Frontend" />}
+              skills={[
+                "React",
+                "React Native",
+                "JavaScript",
+                "Next.js",
+                "TypeScript",
+                "Tailwind CSS",
+                "Android/iOS Development",
+                "Git/GitHub",
+              ]}
+            >
+              <CanvasRevealEffect
+                animationSpeed={3}
+                containerClassName="bg-pink-900 rounded-3xl overflow-hidden"
+                colors={[
+                  [255, 166, 158],
+                  [221, 255, 247],
+                ]}
+                dotSize={2}
+              />
+            </Card>
+          </div>
+          <div className="flex-1 basis-0 min-w-0">
+            <Card
+              title="DevOps & Tools"
+              icon={<AceternityIcon order="DevOps" />}
+              skills={[
+                "Docker",
+                "AWS",
+                "Azure",
+                "Power BI",
+                "Visual Studio Code",
+                "MERN Stack",
+                "CI/CD",
+              ]}
+            >
+              <CanvasRevealEffect
+                animationSpeed={3}
+                containerClassName="bg-sky-700 rounded-3xl overflow-hidden"
+                colors={[[125, 211, 252]]}
+                dotSize={2}
+              />
+            </Card>
+          </div>
+          <div className="flex-1 basis-0 min-w-0">
+            <Card
+              title="Others"
+              icon={<AceternityIcon order="Others" />}
+              skills={[
+                "Machine Learning",
+                "Scrum",
+                "Team Collaboration",
+                "Problem-Solving",
+                "Multitasking",
+                "Critical Thinking",
+              ]}
+            >
+              <CanvasRevealEffect
+                animationSpeed={3}
+                containerClassName="bg-orange-700 rounded-3xl overflow-hidden"
+                colors={[
+                  [255, 166, 158],
+                  [221, 255, 247],
+                ]}
+                dotSize={2}
+              />
+            </Card>
+          </div>
         </div>
       </section>
     </section>
@@ -95,7 +130,7 @@ const Card = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className="border border-black/[0.2] group/canvas-card flex items-center justify-center
-       dark:border-white/[0.2] max-w-sm w-full mx-auto p-6 relative lg:h-[40rem] rounded-3xl shadow-lg"
+       dark:border-white/[0.2] w-full p-6 relative lg:h-[40rem] rounded-3xl shadow-lg"
       style={{
         background:
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
@@ -139,7 +174,7 @@ const Card = ({
           style={{ color: "#E4ECFF" }}
         >
           {skills.map((skill, index) => (
-            <li key={index} className="mb-4 text-xl">
+            <li key={index} className="mb-4 text-2xl">
               {skill}
             </li>
           ))}

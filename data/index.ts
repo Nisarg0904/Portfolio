@@ -15,7 +15,7 @@ export const gridItems = [
     description:
       "I believe great achievements are the result of strong teamwork. While I perform well independently, I thrive in team environments where ideas are shared, challenges are tackled collaboratively, and goals are achieved collectively. This philosophy drives my ability to build synergy, foster open communication, and contribute effectively to any project.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
+    imgClassName: "w-full h-full opacity-80",
     titleClassName: "justify-end",
     img: "/b1.svg",
     spareImg: "",
@@ -23,7 +23,7 @@ export const gridItems = [
   {
     id: 2,
     title:
-      "Participited In IEEE and our team Ranked 14 in 2023 and 15 in 2024 in Canada.",
+      "Participated in IEEE competitions (17.0 and 18.0), achieving team rankings of 14th and 12th respectively in Canada.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -59,9 +59,9 @@ export const gridItems = [
     description:
       "With a strong foundation in Object-Oriented Programming (OOP) and Data Structures & Algorithms (DSA), I excel at building robust and efficient backend systems. However, my skill set extends far beyond backend development. As a full-stack developer, I seamlessly integrate frontend and backend technologies to create end-to-end solutions that deliver exceptional user experiences. My passion lies in versatility and adaptability, ensuring success across all layers of development.",
     className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+    imgClassName: "w-full h-full opacity-40",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/image.png",
+    img: "/bg33.jpg",
     spareImg: "/grid.svg",
   },
   {
@@ -75,70 +75,101 @@ export const gridItems = [
     spareImg: "",
   },
 ];
-
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Grocery Management System",
+    des: "An innovative solution for managing household groceries efficiently. Features include inventory tracking, shopping suggestions, and waste reduction powered by machine learning.",
+    img: "/gms1.png",
+    iconLists: [
+      "/re.svg",
+      "/dock.svg",
+      "/nodejs-logo-svgrepo-com.svg",
+      "/postgresql-svgrepo-com.svg",
+      "/python-svgrepo-com.svg",
+    ],
+    link: "https://github.com/Nisarg0904",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Pet Meetup App",
+    des: "A social platform for pet lovers to connect, organize meetups, and share pet-related content. Find local events and bond with fellow pet enthusiasts.",
+    img: "/pemet.png",
+    iconLists: [
+      "/Spring_Boot.svg",
+      "/python-svgrepo-com.svg",
+      "/re.svg",
+      "/mongodb-svgrepo-com.svg",
+      "/postgresql-svgrepo-com.svg",
+    ],
+    link: "https://github.com/Nisarg0904",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "CardVerse",
+    des: "CardVerse: Your Local Card Game Encyclopedia.",
+    img: "/card.png",
+    iconLists: [
+      "/re.svg",
+      "/dock.svg",
+      "/nodejs-logo-svgrepo-com.svg",
+      "/postgresql-svgrepo-com.svg",
+      "/python-svgrepo-com.svg",
+    ],
+    link: "https://github.com/Nisarg0904",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "ParentConnect: Your School Companion App",
+    des: "Stay connected with your child's educational journey through ParentConnect. This app keeps parents informed and engaged with real-time updates on attendance, weekly performance reports, personalized learning tips, and important school announcements. Empowering parents to actively support their child's growth and success!",
+    img: "/app4.png",
+    iconLists: [
+      "/re.svg",
+      "/dock.svg",
+      "/nodejs-logo-svgrepo-com.svg",
+      "/postgresql-svgrepo-com.svg",
+      "/python-svgrepo-com.svg",
+    ],
+    link: "https://github.com/Nisarg0904",
   },
 ];
 
 export const testimonials = [
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: `I have known Nisarg for more than 8 years now. He is quite dedicated and passionate about designing and writing neat code.
+As a Fullstack Developer, Nisarg is learning user interfaces for software products. He demonstrates a profound understanding of contemporary front-end development technologies, effectively translating design into interactive and responsive user interfaces. His professionalism, dedication and attention to detail are commendable.
+His technical analytical skills can efficiently resolve emerging technical challenges. Moreover, he is a team player and his collaborative nature is liked by everyone in our circle.
+I highly recommend Nisarg as a Junior but very skilled Developer, capable of making valuable contributions to the software development industry.
+`,
+    name: "Dev Budheliya ",
+    title: "HR Leader & Strategist at Artech Canada",
+    img: "/dev_budeliya.jpg",
+  },
+
+  {
+    quote: `I have known Nisarg for more than 8 years now. He is quite dedicated and passionate about designing and writing neat code.
+As a Fullstack Developer, Nisarg is learning user interfaces for software products. He demonstrates a profound understanding of contemporary front-end development technologies, effectively translating design into interactive and responsive user interfaces. His professionalism, dedication and attention to detail are commendable.
+His technical analytical skills can efficiently resolve emerging technical challenges. Moreover, he is a team player and his collaborative nature is liked by everyone in our circle.
+I highly recommend Nisarg as a Junior but very skilled Developer, capable of making valuable contributions to the software development industry.
+`,
+    name: "Dev Budheliya ",
+    title: "HR Leader & Strategist at Artech Canada",
+    img: "/dev_budeliya.jpg",
+  },
+
+  {
+    quote: `I have known Nisarg for more than 8 years now. He is quite dedicated and passionate about designing and writing neat code.
+As a Fullstack Developer, Nisarg is learning user interfaces for software products. He demonstrates a profound understanding of contemporary front-end development technologies, effectively translating design into interactive and responsive user interfaces. His professionalism, dedication and attention to detail are commendable.
+His technical analytical skills can efficiently resolve emerging technical challenges. Moreover, he is a team player and his collaborative nature is liked by everyone in our circle.
+I highly recommend Nisarg as a Junior but very skilled Developer, capable of making valuable contributions to the software development industry.
+`,
+    name: "Dev Budheliya ",
+    title: "HR Leader & Strategist at Artech Canada",
+    img: "/dev_budeliya.jpg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Nisarg was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Nisarg's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Nisarg is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
@@ -224,39 +255,19 @@ export const companies = [
     id: 17,
     name: "ai",
     img: "/ai-svgrepo-com (1).svg",
-  }
+  },
+  {
+    id: 17,
+    name: "node js",
+    img: "/nodejs-1-logo-svgrepo-com.svg",
+  },
+  {
+    id: 17,
+    name: "tensor flow",
+    img: "/tensorflow-svgrepo-com.svg",
+  },
 ];
 
-export const workExperience = [
-  {
-    id: 1,
-    title: "Mobi Help Tutor At GBC",
-    desc: "Assisted my peers and junior student at GBC in any kind of course related problems through out the Course.",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
-  },
-  {
-    id: 2,
-    title: "Front Of the House/ Prep At Nandos Peri-Peri",
-    desc: "Worked as Front of House (FOH) staff and Prep Cook in a restaurant during my student life, honing multitasking and customer service skills.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp5.webp",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
-];
 
 export const socialMedia = [
   {
@@ -264,13 +275,9 @@ export const socialMedia = [
     img: "/git.svg",
     link: "https://github.com/Nisarg0904", // GitHub URL
   },
+
   {
     id: 2,
-    img: "/twit.svg",
-    link: "https://twitter.com", // Twitter URL
-  },
-  {
-    id: 3,
     img: "/link.svg",
     link: "https://www.linkedin.com/in/nisarg-bhatti-052654223/", // LinkedIn URL
   },
